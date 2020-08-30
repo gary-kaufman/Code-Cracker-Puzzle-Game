@@ -164,6 +164,6 @@ results_listbox.grid(row=2,column=0,columnspan=2)
 reset_b = tk.Button(window, text="Reset",width=42, command=reset_game)
 reset_b.grid(row=3,column=0,columnspan=2)
 
-window.geometry("500x500")
+window.geometry("500x300")
 window.title('C0de Crack3r!')
 window.mainloop()
