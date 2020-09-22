@@ -5,7 +5,7 @@ window = tk.Tk()
 
 ###
 # 
-# Add a reset button that allows you to start over with a new code, once you've cracked it
+# create an executable and installer you cool guy!
 # 
 ###
 
@@ -23,7 +23,7 @@ def create_code():
 create_code()
 print(code)
 
-def check_int(event):
+def check_int():
     try:
         int(entry_code_attempt.get())
         check()
@@ -151,8 +151,8 @@ entry_code_attempt.grid(row=1,column=0,padx="60")
 #This button goes in next to the code entry and will 'get' the information from the entry widget and executes the 'check_int' and then the 'check' function
 b = tk.Button(window, text="Check!", width=15, command=check_int)
 b.grid(row=1,column=1,padx="60")
-window.bind('<Return>', check_int) #binds Return key to function 'check'
-window.bind('Enter', check_int) 
+window.bind('<Return>', lambda event: check_int()) #binds Return key to function 'check'
+window.bind('Enter', lambda event: check_int()) 
 
 #This creates the results 'listbox' and scrolling feature
 scrollbar = tk.Scrollbar(window, orient=tk.VERTICAL)
