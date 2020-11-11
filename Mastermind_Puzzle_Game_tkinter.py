@@ -3,12 +3,6 @@ import random
 #Create the window where the app will run
 window = tk.Tk()
 
-###
-# 
-# create an executable and installer you cool guy!
-# 
-###
-
 welcome = '''Welcome to the C0de Crack3r! To crack the code, 
 type in a three digit code, then press Check! 
 X = correct number and placement 
@@ -19,9 +13,8 @@ def create_code():
     global code
     code = str(random.randint(100,999))
     print(code)
-#for testing
+
 create_code()
-print(code)
 
 def check_int():
     try:
