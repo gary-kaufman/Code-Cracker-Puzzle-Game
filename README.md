@@ -1,4 +1,4 @@
-# Code-Cracker-Puzzle-Game
+# Code-Cracker-Puzzle-Game :key: :unlock:
 
 ## Overview
 
